@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Profile Card</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <div id="profile-card">
+
+        <img id="profile-photo"
+             src="1665223439189.JPG"
+             alt="Student Photo">
+
+        <h2 id="student-name">Ajay Lal Das</h2>
+
+        <div id="student-bio">
+            <p>I am a student interested in technology, web development, and
+            Artificial Intelligence and Machine Learning.</p>
+        </div>
+
+        <ul id="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>jQuery</li>
+            <li>JavaScript</li>
+            <li>Artificial Intelligence</li>
+        </ul>
+
+        <input type="text" id="nickname-input" placeholder="Enter nickname">
+
+        <div id="buttons">
+
+            <h3>GET & SET</h3>
+            <button id="show-name">Show Name</button>
+            <button id="change-name">Change Name</button>
+            <button id="show-bio">Show Bio</button>
+            <button id="get-input">Get Input</button>
+            <button id="set-input">Set Input</button>
+
+            <h3>CSS CLASSES</h3>
+            <button id="highlight-card">Highlight Card</button>
+            <button id="remove-highlight">Remove Highlight</button>
+            <button id="dark-mode">Toggle Dark Mode</button>
+            <button id="rounded-photo">Toggle Rounded</button>
+
+            <h3>CSS METHOD</h3>
+            <button id="red-background">Red Background</button>
+            <button id="reset-background">Reset Background</button>
+
+            <h3>HIDE & SHOW</h3>
+            <button id="hide-photo">Hide Photo</button>
+            <button id="show-photo">Show Photo</button>
+            <button id="toggle-bio">Toggle Bio</button>
+
+            <h3>FADE</h3>
+            <button id="fade-out">Fade Out Card</button>
+            <button id="fade-in">Fade In Card</button>
+            <button id="fade-half">Fade to 50%</button>
+
+            <h3>SLIDE</h3>
+            <button id="slide-up">Slide Up Skills</button>
+            <button id="slide-down">Slide Down Skills</button>
+            <button id="slide-toggle">Slide Toggle Skills</button>
+
+            <h3>ANIMATE</h3>
+            <button id="animate-card">Animate Card</button>
+
+        </div>
+
+        <h3>Output</h3>
+        <div id="output">Output will appear here...</div>
+
+    </div>
+
+    <!-- jQuery Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>

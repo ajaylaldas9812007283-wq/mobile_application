@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Card</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="profileCard.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+</head>
+
+<body>
+
+    <div class="profile-container">
+
+        <div class="profile-card">
+
+            <!-- Profile Image -->
+            <div class="profile-image">
+                <img src="1665223439189 (1).JPG" alt="Profile Image">
+            </div>
+
+            <!-- Name -->
+            <h1>Ajay Lal Das</h1>
+
+            <p class="designation">Student | IT & Technology</p>
+
+            <!-- Profile Details -->
+            <div class="profile-details">
+
+                <div class="detail">
+                    <span class="icon">📍</span>
+                    <div>
+                        <small>Address</small>
+                        <p>Janakpur, Nepal</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <span class="icon">📧</span>
+                    <div>
+                        <small>Email</small>
+                        <p>ajaylaldas9812007283@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <span class="icon">📱</span>
+                    <div>
+                        <small>Phone</small>
+                        <p>+977 9812007283</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <span class="icon">🎓</span>
+                    <div>
+                        <small>Student ID</small>
+                        <p>STU2026001</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- QR Button -->
+            <button id="qrButton" class="qr-button">
+                Show QR Code
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- QR Popup -->
+    <div id="qrPopup" class="popup">
+
+        <div class="popup-content">
+
+            <button id="closePopup" class="close-button">
+                &times;
+            </button>
+
+            <h2>My Profile QR Code</h2>
+
+            <p>Scan this QR code to view my profile.</p>
+
+            <div id="qrcode"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- jQuery -->
+    <script>
+
+        $(document).ready(function () {
+
+            // Open QR popup
+            $("#qrButton").click(function () {
+
+                $("#qrcode").empty();
+
+                // Create QR Code
+                $("#qrcode").qrcode({
+                    text: "Ajay Lal Das | Student | Janakpur, Nepal | STU2026001",
+                    width: 180,
+                    height: 180
+                });
+
+                // Show popup
+                $("#qrPopup").fadeIn(300);
+            });
+
+
+            // Close popup
+            $("#closePopup").click(function () {
+                $("#qrPopup").fadeOut(300);
+            });
+
+
+            // Close popup when clicking outside
+            $("#qrPopup").click(function (event) {
+
+                if (event.target === this) {
+                    $("#qrPopup").fadeOut(300);
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
