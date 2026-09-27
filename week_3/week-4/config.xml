@@ -1,0 +1,59 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget
+    id="com.pgs.campuslostfound"
+    version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>PGS Campus Lost &amp; Found</name>
+
+    <description>
+        Campus Lost and Found mobile application
+        for Presidential Graduate School.
+    </description>
+
+    <author email="student@example.com">
+        Ajay Lal Das
+    </author>
+
+    <content src="index.html" />
+
+    <!-- Mobile screen settings -->
+    <preference
+        name="Orientation"
+        value="portrait" />
+
+    <preference
+        name="Fullscreen"
+        value="false" />
+
+    <preference
+        name="DisallowOverscroll"
+        value="true" />
+
+    <!-- Allow the PGS website to open -->
+    <allow-navigation href="https://www.presidential.edu.np/*" />
+
+    <access
+        origin="*" />
+
+    <!-- Android -->
+    <platform name="android">
+
+        <allow-intent href="http://*/*" />
+        <allow-intent href="https://*/*" />
+
+    </platform>
+
+    <!-- iOS -->
+    <platform name="ios">
+
+        <allow-intent href="http://*/*" />
+        <allow-intent href="https://*/*" />
+
+    </platform>
+
+</widget>
+```

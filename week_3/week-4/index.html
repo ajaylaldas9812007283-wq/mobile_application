@@ -1,0 +1,189 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PGS Campus Lost & Found</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mobile-app">
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="logo">
+                    🎓
+                </div>
+
+                <div>
+                    <h1>Campus</h1>
+                    <h1>Lost &amp; Found</h1>
+                </div>
+
+            </div>
+
+            <h2>
+                Lost something?<br>
+                Found something?
+            </h2>
+
+            <p class="hero-text">
+                Find it. Report it. Return it to its owner.
+            </p>
+
+            <p class="college">
+                Presidential Graduate School
+            </p>
+
+        </section>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="content">
+
+            <!-- FIND ITEM -->
+            <button
+                type="button"
+                id="findButton"
+                class="action-button find-button">
+
+                <span class="button-icon">⌕</span>
+
+                <span class="button-text">
+                    <strong>Find an Item</strong>
+                    <small>Search for lost or found items</small>
+                </span>
+
+                <span class="arrow">›</span>
+
+            </button>
+
+
+            <!-- REPORT LOST ITEM -->
+            <button
+                type="button"
+                id="lostButton"
+                class="action-button lost-button">
+
+                <span class="button-icon">+</span>
+
+                <span class="button-text">
+                    <strong>Report Lost Item</strong>
+                    <small>Let others know what you lost</small>
+                </span>
+
+                <span class="arrow">›</span>
+
+            </button>
+
+
+            <!-- REPORT FOUND ITEM -->
+            <button
+                type="button"
+                id="foundButton"
+                class="action-button found-button">
+
+                <span class="button-icon">✓</span>
+
+                <span class="button-text">
+                    <strong>Report Found Item</strong>
+                    <small>Help return an item to its owner</small>
+                </span>
+
+                <span class="arrow">›</span>
+
+            </button>
+
+
+            <!-- COMMUNITY MESSAGE -->
+            <div class="community-box">
+
+                <div class="people-icon">
+                    👥
+                </div>
+
+                <div>
+                    <strong>
+                        Helping our campus community
+                    </strong>
+
+                    <span>
+                        reconnect with lost belongings
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+            <div id="form-area" class="form-area">
+
+                <h3 id="form-title">
+                    Report an Item
+                </h3>
+
+                <input
+                    type="text"
+                    id="item-name"
+                    placeholder="Enter item name"
+                >
+
+                <input
+                    type="text"
+                    id="item-location"
+                    placeholder="Enter location"
+                >
+
+                <button
+                    type="button"
+                    id="submitButton"
+                    class="submit-button">
+
+                    Submit Report
+
+                </button>
+
+                <div id="result"></div>
+
+            </div>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>Presidential Graduate School</p>
+
+            <p>
+                New Baneshwor, Kathmandu, Nepal
+            </p>
+
+            <a
+                href="https://www.presidential.edu.np/"
+                target="_blank">
+
+                Visit PGS Website
+
+            </a>
+
+        </footer>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
